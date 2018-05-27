@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Android_Message_App_Appium.iml" filepath="$PROJECT_DIR$/.idea/modules/Android_Message_App_Appium.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Android_Message_App_Appium_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Android_Message_App_Appium_main.iml" group="Android_Message_App_Appium" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Android_Message_App_Appium_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Android_Message_App_Appium_test.iml" group="Android_Message_App_Appium" />
+    </modules>
+  </component>
+</project>
