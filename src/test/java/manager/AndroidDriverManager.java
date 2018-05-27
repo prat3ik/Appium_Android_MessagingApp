@@ -33,18 +33,20 @@ public class AndroidDriverManager {
     public final static String APP_PACKAGE_NAME = PropertyUtils.getProperty("android.app.packageName");
     public final static String APP_ACTIVITY_NAME = PropertyUtils.getProperty("android.app.activityName");
     public final static String APP_FULL_RESET = PropertyUtils.getProperty("android.app.full.reset");
+    public final static String APP_NO_RESET = PropertyUtils.getProperty("android.app.no.reset");
     public final static int IMPLICIT_WAIT = PropertyUtils.getIntegerProperty("implicitWait", 30);
 
 
     public static DesiredCapabilities getAndroidCaps() {
-        DesiredCapabilities caps = DesiredCapabilities.android();
-        caps.setCapability(MobileCapabilityType.DEVICE_NAME, DEVICE_NAME);
+        DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability(MobileCapabilityType.PLATFORM_NAME, PLATFORM_NAME);
         caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, PLATFORM_VERSION);
         caps.setCapability(MobileCapabilityType.APP, APP_PATH);
+        caps.setCapability(MobileCapabilityType.DEVICE_NAME, DEVICE_NAME);
         caps.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, APP_PACKAGE_NAME);
         caps.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, APP_ACTIVITY_NAME);
         caps.setCapability(MobileCapabilityType.FULL_RESET, APP_FULL_RESET);
+        caps.setCapability(MobileCapabilityType.NO_RESET, APP_NO_RESET);
         return caps;
     }
 
